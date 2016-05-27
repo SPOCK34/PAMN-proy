@@ -13,24 +13,27 @@ public class JugadorPortero extends Futbolista{
 	protected byte balonesdetenidos;
 	
 	//Costructor
-	public JugadorPortero(String tamañomanos, String saltos, String suerte, byte balonesdetenidos){
+	public JugadorPortero(String tamañomanos, String saltos, String suerte, byte balonesdetenidos, String nombre){
 
 		this.tamañomanos=tamañomanos;
 		this.saltos=saltos;
 		this.suerte=suerte;
 		this.balonesdetenidos= balonesdetenidos;
+		this.nombre= nombre;
 		
 	}
 	//clases: penal, saque de meta, 
-	protected void SaqueMeta(String nombre){
-		this.nombre= nombre
+	public void SaqueMeta(){
+		
+		System.out.println("El portero "+nombre+" hace saque  de meta");
 
+
+	}
+	public void Penal(){
 		
 	}
-	protected void Penal(){
+	public void MuestraEstadisticas(){
 		
 	}
-	protected void MuestraEstadisticas(){
-		
-	}
+
 }

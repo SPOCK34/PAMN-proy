@@ -16,9 +16,7 @@ public class Persona {
 
 	public void Persona()
 	{
-		nombre=  carlos;
-		edocivil = soltero;
-		peso= 70;
+		
 	}
 	
 	protected void Crecer(){
