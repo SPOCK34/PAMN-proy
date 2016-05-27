@@ -63,4 +63,11 @@ public class JugadorPortero extends Futbolista{
 		System.out.println("\nTitularidad: "+titularidad);
 	}
 
+	protected int Valoracion()
+	{
+		int value=0;//  variable ala que se le asignara el promedio de la  valoracion
+
+		
+	}
+
 }
