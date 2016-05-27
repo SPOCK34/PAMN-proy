@@ -53,6 +53,10 @@ public class JugadorCampo extends Futbolista{
 		presicionpase=Menu.ListaMenu("Presicion de pase: ",10);
 		presiciontiro=Menu.ListaMenu("Presicion de tiro: ",10);
 	}
+
+	/**
+	* Implementacionde los metodos
+	*/
 	
 	/**
 	* ESte  método define la posicion de los jugadores y sus acciones respectivas
@@ -104,4 +108,10 @@ public class JugadorCampo extends Futbolista{
 	protected void MuestraEstadisticas(){
 		
 	}
+	/**
+	* Metodos set y get de cada uno de los atributos 
+	*metodos necesarios para extraer la informacion devido a que 
+	*dichos atributos son protected
+	*/
+
 }

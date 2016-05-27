@@ -13,6 +13,13 @@ public class Persona {
 	protected byte edad;
 	protected float peso,altura;
 	protected int nacionalidad;
+
+	public void Persona()
+	{
+		nombre=  carlos;
+		edocivil = soltero;
+		peso= 70;
+	}
 	
 	protected void Crecer(){
 		
