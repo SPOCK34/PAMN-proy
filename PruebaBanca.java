@@ -1,19 +1,47 @@
-
+/**
+*La clase preba banca  muestra la informacion de cada uno de los usuarios de la banca 
+* haciendo uso de un menu
+*
+* @author: Josue Sanchéz 
+* @author: Rodrigo Florian
+* @author: Colvert Gomez
+* @author: Carlos Pérez Vásquez
+* @author: Eliseo Martinez Aguirre
+* @version: 26/05/2016/A
+**/
 public class PruebaBanca {
+/**
+*clase que contien un metodo main 
+*/
 	public static void main(String args[]){
+   /**
+   *Declaracion de los atributos
+   *
+   * i  es un contador, op y opc  son auxiliares  que se maejara el los switch case
+   */
 		long ti,tf,t;
 		int i,opc,opcion;
 		Menu menu = new Menu();
 		ti=System.currentTimeMillis();
 		System.out.println("**********************************************");
 	    System.out.println("Bienvenido al Sistema de Emulacion de un Club de Futbol");
+            /**
+            *se crean objetos de  las otras clases para el uso de sus metodos  asi como la 
+            *obtencion de sus atributos
+            */
 		JugadorPortero portero=new JugadorPortero();
 		portero.JugadorPortero(InformacionPortero());
 		JugadorCampo[] jugador=new JugadorCampo[4];
+      /**
+      *Se utilizan ciclos para crear alos jugadores
+      */
 		for(i=0;i<4;i++){
 			jugador[i]=new JugadorCampo();
 			jugador[i].JugadorCampo(InformacionJugador(i));
 		}
+      /**
+      *Se implementa  un menu 
+      */
 		do{
 			opcion = menu.ListaMenu("Las opciones son:\n1)Imprimir informacion de la alineacion completa.\n2)Imprimir informacion de jugador.\n3)Salir.\nOpcion:",3);
 			switch(opcion){
@@ -36,6 +64,10 @@ public class PruebaBanca {
 			}
 		}while(opcion!=3);
 	}
+   
+/**
+*metodo que  guarda la informacion del protero en un arreglo y  lo retorna
+*/
 	public static String[] InformacionPortero(){
 		String[] datos=new String[24];
 		datos[0]="Rodrigo Florian Guzman";	datos[1]="Barrio";
@@ -52,6 +84,9 @@ public class PruebaBanca {
 		datos[22]="15";	datos[23]="8";
 		return datos;
 	}
+  /**
+  *Metodo que guarda la informacion de los jugadores
+  */
 	
 	public static String[] InformacionJugador(int i){
 		String[] datos=new String[23];

@@ -1,3 +1,7 @@
+/**
+*La clase teclado nos ayuda a lalectura de varios tipos de datos como strings  enteros o reales
+*inporta una clase de excepciones necesarias para  la validacion de lalectura
+*/
 import java.io.*;
 
 public class Teclado
@@ -5,8 +9,13 @@ public class Teclado
     static private String cadena;
     static private BufferedReader in;
 
-    // métodos públicos
+    /**
+    * métodos públicos 
+    */
 	 
+    /**
+    *metodos que leen  cadenas
+    */
     public static String LeeCadena(String prompt) {
 		  return  leerCadena(prompt);
     }
@@ -14,7 +23,9 @@ public class Teclado
     public static String LeeCadena() {
         return leerCadena("");
     }
-    
+     /**
+    *metodos que leen  bytes
+    */
     public static byte LeeByte(String prompt) {
         return leerByte(prompt);
     }
@@ -22,7 +33,9 @@ public class Teclado
     public static byte LeeByte() {
         return leerByte("");
     }
-
+   /**
+    *metodos que leen  enteros
+    */
     public static int LeeEntero(String prompt) {
         return leerEntero(prompt);
     }
@@ -30,7 +43,9 @@ public class Teclado
     public static int LeeEntero() {
         return leerEntero("");
     }
-    
+    /**
+    *metodos que leen  flotantes
+    */
     public static float LeeFloat(String prompt) {
         return leerFlotante(prompt);
     }
@@ -38,7 +53,9 @@ public class Teclado
     public static float LeeFloat() {
         return leerFlotante("");
     }
-
+   /**
+    *metodos que leen  dobles
+    */
     public static double LeeDouble(String prompt) {
         return leerDoble(prompt);
     }
@@ -47,13 +64,22 @@ public class Teclado
         return leerDoble("");
     }
 
-    // métodos privados!
-
+    /**
+    * métodos privados!
+    */
+    
+    /**
+    * metodo  que inicializa 
+    */
     private static void inicializar() {
 	     if (in==null)
         	in = new BufferedReader(new InputStreamReader(System.in));
     }
 
+   /**
+   *metodo que valida y lee la cadena 
+   *asi como manda un mensaje de error  al presentarse la excepcion
+   */
     private static String leerCadena(String prompt) {
         try {
         		inicializar();
@@ -67,7 +93,10 @@ public class Teclado
         }
         return cadena;
     }
-
+/**
+   *metodo que valida y lee la byte
+   *asi como manda un mensaje de error  al presentarse la excepcion
+   */
     private static byte leerByte(String prompt) {
         byte b=0;
         boolean ok;
@@ -92,7 +121,10 @@ public class Teclado
         }
         return b;
     }
-    
+    /**
+   *metodo que valida y lee enteros
+   *asi como manda un mensaje de error  al presentarse la excepcion
+   */
     private static int leerEntero(String prompt) {
         int i=0;
         boolean ok;
@@ -117,7 +149,10 @@ public class Teclado
         }
         return i;
     }
-
+/**
+   *metodo que valida y lee flotantes
+   *asi como manda un mensaje de error  al presentarse la excepcion
+   */
     private static float leerFlotante(String prompt) {
         float f=0.0f;
         boolean ok;
@@ -142,6 +177,11 @@ public class Teclado
         }
         return f;
     }
+    
+    /**
+   *metodo que valida y lee la dobles 
+   *asi como manda un mensaje de error  al presentarse la excepcion
+   */
     
     private static double leerDoble(String prompt) {
         double d=0.0;

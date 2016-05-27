@@ -1,5 +1,6 @@
 /**
-* 
+* La clase JugadorPortero tiene  atributos que definen a un jugador de la vida real asi como las acciones 
+* en la cancha
 * @author: Josue Sanchéz 
 * @author: Rodrigo Florian
 * @author: Colvert Gomez

@@ -1,6 +1,7 @@
 
 /**
 *La clase futbolista hereda propiedades de la clase persona 
+*y contiene atributos y metodos referentes a un futbolista 
 * @author: Josue Sanchéz 
 * @author: Rodrigo Florian
 * @author: Colvert Gomez

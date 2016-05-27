@@ -1,6 +1,14 @@
+/**
+*Clase menu que genera el rpototipo de menu 
+*para su mejor  implemntacion  en la funcion principal
+*/
+
 public class Menu{
 
-//Metodo//
+/**
+*Metodo que valida  que el usuario ingrese una opcion valida
+*de lo contrario se repetra el menu
+*/
 
    public static int ListaMenu(String texto,int max_opc){
       int opcion;
