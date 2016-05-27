@@ -38,8 +38,9 @@ public class JugadorPortero extends Futbolista{
 
 		System.out.println("Datos del Portero: ");
 		System.out.println("Nombre: "+nombre+"\nGenero: "+genero+"\nEstado civil: "+edocivil+"\nEdad: "+edad+"\nPeso: "+peso+"\nAltura: "+altura+"\nNacionalidad: "+nacionalidad);
-		System.out.println("\nApodo: "+apodo+"\nDivisión:"+division+"\nPosición:");
-
+		System.out.println("\nApodo: "+apodo+"\nDivisión:"+division+"\nPosición: "+posicion+"\nLesiones: "+Lesiones+"\Experiencia: "+experiencia+);
+		System.out.println("\nContrato"+contrato+"\nPosiciones que ocupa: "+posicionesp+"\nSueldo: "+sueldo);
+		System.out.println("\nTitularidad: "+titularidad);
 	}
 
 }
