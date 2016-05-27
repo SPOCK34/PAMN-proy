@@ -5,7 +5,7 @@ public class Menu{
    public static int ListaMenu(String texto,int max_opc){
       int opcion;
       do{
-         opcion = Teclado.LeeByte(texto);
+         opcion = Teclado.LeeEntero(texto);
          if(opcion > max_opc || opcion<1){
             System.out.println("Error: Opcion invalida...");
          }
